@@ -1,8 +1,8 @@
 VERSION = 3
 PATCHLEVEL = 4
 SUBLEVEL = 5
-EXTRAVERSION = -959739
-NAME = Saber-toothed Squirrel
+EXTRAVERSION =
+NAME = Timofey Fox
 
 # *DOCUMENTATION*
 # To see a list of typical targets execute "make help"
@@ -193,7 +193,7 @@ SUBARCH := $(shell uname -m | sed -e s/i.86/i386/ -e s/sun4u/sparc64/ \
 # Note: Some architectures assign CROSS_COMPILE in their arch/*/Makefile
 export KBUILD_BUILDHOST := $(SUBARCH)
 ARCH		?= arm
-CROSS_COMPILE	?= 4.6/x86/bin/arm-linux-androideabi-
+CROSS_COMPILE	?= linaro-4.6.2/bin/arm-eabi-
 
 # Architecture as present in compile.h
 UTS_MACHINE 	:= $(ARCH)
